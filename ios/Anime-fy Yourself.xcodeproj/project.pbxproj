@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F69DF5F275FF2960099C11A /* AnimefyYourselfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69DF5E275FF2960099C11A /* AnimefyYourselfApp.swift */; };
-		9F69DF61275FF2960099C11A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69DF60275FF2960099C11A /* ContentView.swift */; };
+		9F69DF61275FF2960099C11A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69DF60275FF2960099C11A /* MainView.swift */; };
 		9F69DF63275FF2970099C11A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F69DF62275FF2970099C11A /* Assets.xcassets */; };
 		9F69DF66275FF2970099C11A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F69DF65275FF2970099C11A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		9F69DF5B275FF2960099C11A /* Anime-fy Yourself.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anime-fy Yourself.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F69DF5E275FF2960099C11A /* AnimefyYourselfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimefyYourselfApp.swift; sourceTree = "<group>"; };
-		9F69DF60275FF2960099C11A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F69DF60275FF2960099C11A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9F69DF62275FF2970099C11A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F69DF65275FF2970099C11A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				9F69DF5E275FF2960099C11A /* AnimefyYourselfApp.swift */,
-				9F69DF60275FF2960099C11A /* ContentView.swift */,
+				9F69DF60275FF2960099C11A /* MainView.swift */,
 				9F69DF62275FF2970099C11A /* Assets.xcassets */,
 				9F69DF64275FF2970099C11A /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F69DF61275FF2960099C11A /* ContentView.swift in Sources */,
+				9F69DF61275FF2960099C11A /* MainView.swift in Sources */,
 				9F69DF5F275FF2960099C11A /* AnimefyYourselfApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
