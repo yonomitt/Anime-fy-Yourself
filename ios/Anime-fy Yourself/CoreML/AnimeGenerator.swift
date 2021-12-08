@@ -23,7 +23,7 @@ class AnimeGenerator: VisionProcessor {
         return req
     }()
     
-    private let requestBest: VNRequest = {
+    private lazy var requestBest: VNRequest = {
         let configuration = MLModelConfiguration()
         configuration.computeUnits = .all
         configuration.allowLowPrecisionAccumulationOnGPU = true
