@@ -2,7 +2,7 @@
 //  AnimefyYourselfApp.swift
 //  Anime-fy Yourself
 //
-//  Created by Yonatan Mittlefehldt on 2021-07-12.
+//  Created by Yonatan Mittlefehldt on 2021-12-07.
 //
 
 import SwiftUI
