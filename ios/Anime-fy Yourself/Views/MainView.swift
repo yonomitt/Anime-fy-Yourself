@@ -12,10 +12,23 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            FrameView(image: model.frame)
-                .edgesIgnoringSafeArea(.all)
+            HStack {
+                if model.displayMode.shouldShowOriginal {
+                    FrameView(image: model.frame)
+                        .edgesIgnoringSafeArea(.all)
+                }
+
+                if model.displayMode.shouldShowAnime {
+                    FrameView(image: model.animeFrame)
+                        .edgesIgnoringSafeArea(.all)
+                }
+            }
             
             ErrorView(error: model.error)
+        }
+        .contentShape(Rectangle())
+        .onTapGesture {
+            self.model.nextFrameDisplayMode()
         }
     }
 }

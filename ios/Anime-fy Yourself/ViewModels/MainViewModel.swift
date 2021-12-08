@@ -11,6 +11,8 @@ import CoreImage
 class MainViewModel: ObservableObject {
     @Published var error: Error?
     @Published var frame: CGImage?
+    @Published var animeFrame: CGImage?
+    @Published var displayMode = FrameDisplayMode.original
 
     private let cameraManager = CameraManager.shared
     private let frameManager = FrameManager.shared
@@ -29,6 +31,10 @@ class MainViewModel: ObservableObject {
         subscriptions.removeAll()
         
         setupErrorHandling()
+        
+        frameManager.$current
+            .compactMap { CGImage.create(from: $0) }
+            .assign(to: &$frame)
 
         frameManager.$current
             .sample(every: 5)
@@ -39,7 +45,7 @@ class MainViewModel: ObservableObject {
                 
                 return self.context.createCGImage(ciImage, from: ciImage.extent)
             }
-            .sink { self.frame = $0 }
+            .sink { self.animeFrame = $0 }
             .store(in: &subscriptions)
     }
 
@@ -60,5 +66,12 @@ class MainViewModel: ObservableObject {
             .debounce(for: .seconds(10), scheduler: DispatchQueue.main)
             .sink { _ in self.error = nil }
             .store(in: &subscriptions)
+    }
+    
+    /// Cycle through frame display modes
+    func nextFrameDisplayMode() {
+        DispatchQueue.main.async {
+            self.displayMode = self.displayMode.next()
+        }
     }
 }
