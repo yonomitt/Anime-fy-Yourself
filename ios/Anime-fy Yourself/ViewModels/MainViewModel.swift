@@ -29,9 +29,9 @@ class MainViewModel: ObservableObject {
     /// Sets up all `Combine` subscriptions in one convenient place
     private func setupSubscriptions(fast: Bool) {
         subscriptions.removeAll()
-        
+
         setupErrorHandling()
-        
+
         frameManager.$current
             .compactMap { CGImage.create(from: $0) }
             .assign(to: &$frame)
@@ -42,7 +42,7 @@ class MainViewModel: ObservableObject {
                 guard let ciImage = try? AnimeGenerator.shared.process(image: buffer, fast: fast) else {
                     return nil
                 }
-                
+
                 return self.context.createCGImage(ciImage, from: ciImage.extent)
             }
             .sink { self.animeFrame = $0 }
@@ -67,7 +67,7 @@ class MainViewModel: ObservableObject {
             .sink { _ in self.error = nil }
             .store(in: &subscriptions)
     }
-    
+
     /// Cycle through frame display modes
     func nextFrameDisplayMode() {
         DispatchQueue.main.async {

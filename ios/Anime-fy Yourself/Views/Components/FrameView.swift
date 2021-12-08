@@ -9,9 +9,9 @@ import SwiftUI
 
 struct FrameView: View {
     var image: CGImage?
-    
+
     private let label = Text("Video feed")
-    
+
     var body: some View {
         if let image = image {
             GeometryReader { geometry in

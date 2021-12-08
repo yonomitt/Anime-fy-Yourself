@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject private var model = MainViewModel()
-    
+
     var body: some View {
         ZStack {
             HStack {
@@ -23,7 +23,7 @@ struct MainView: View {
                         .edgesIgnoringSafeArea(.all)
                 }
             }
-            
+
             ErrorView(error: model.error)
         }
         .contentShape(Rectangle())

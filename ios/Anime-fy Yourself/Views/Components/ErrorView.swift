@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ErrorView: View {
     var error: Error?
-    
+
     var body: some View {
         VStack {
             Text(error?.localizedDescription ?? "")
@@ -21,7 +21,7 @@ struct ErrorView: View {
                 .background(Color.red.edgesIgnoringSafeArea(.top))
                 .opacity(error == nil ? 0.0 : 1.0)
                 .animation(.easeInOut(duration: 0.25), value: error == nil)
-            
+
             Spacer()
         }
     }
