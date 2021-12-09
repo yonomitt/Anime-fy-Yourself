@@ -2,7 +2,7 @@
 Code and documentation for my talk Anime-fy Yourself Using Core ML
 
 ## Convert from PyTorch to Core ML
-To convert [@bryandlee]'s PyTorch implementation of [AnimeGANv2](https://github.com/bryandlee/animegan2-pytorch) to Core ML, run the following command:
+To convert [@bryandlee](https://github.com/bryandlee)'s PyTorch implementation of [AnimeGANv2](https://github.com/bryandlee/animegan2-pytorch) to Core ML, run the following command:
 
 ```
 python convert_to_nn.py 512
