@@ -31,5 +31,5 @@ Here are some example images and their cosine similarities:
 
 Original | PyTorch | Core ML | Cosine Similarity
 -------- | ------- | ------- | -----------------
-![Yono 1](samples/Yono1.jpg|width=256) | ![PyTorch Anime Yono 1](samples/Yono1_pt.png|width=256) | ![Core ML Anime Yono 1](samples/Yono1_cml.png|width=256) | 91.04% 
-![Yono 2](samples/Yono2.jpg|width=256) | ![PyTorch Anime Yono 2](samples/Yono2_pt.png|width=256) | ![Core ML Anime Yono 2](samples/Yono2_cml.png|width=256) | 80.48%
+![Yono 1](samples/Yono1.jpg) | ![PyTorch Anime Yono 1](samples/Yono1_pt.png) | ![Core ML Anime Yono 1](samples/Yono1_cml.png) | 91.04% 
+![Yono 2](samples/Yono2.jpg) | ![PyTorch Anime Yono 2](samples/Yono2_pt.png) | ![Core ML Anime Yono 2](samples/Yono2_cml.png) | 80.48%
