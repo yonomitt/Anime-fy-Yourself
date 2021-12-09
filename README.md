@@ -1,4 +1,4 @@
-# Anime-fy-Yourself
+# Anime-fy Yourself
 Code and documentation for my talk Anime-fy Yourself Using Core ML
 
 ## Convert from PyTorch to Core ML
