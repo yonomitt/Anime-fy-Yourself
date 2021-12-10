@@ -7,7 +7,7 @@ Code and documentation for my talk, _[Anime-fy Yourself Using Core ML](https://g
 
 _Screen recording of the sample app running on an M1 Mac_
 
-# Setting up your environment
+## Setting up your environment
 
 To setup your environment, see [SETUP.md](SETUP.md).
 
