@@ -1,7 +1,11 @@
 # Anime-fy Yourself
 Code and documentation for my talk, _[Anime-fy Yourself Using Core ML](https://github.com/yonomitt/Anime-fy-Yourself-Talk)_
 
+---
+
 ![Screen recording of the sample app running on an M1 Mac](samples/mac-app-sample.gif)
+
+_Screen recording of the sample app running on an M1 Mac_
 
 # Setting up your environment
 
