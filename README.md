@@ -1,5 +1,5 @@
 # Anime-fy Yourself
-Code and documentation for my talk Anime-fy Yourself Using Core ML
+Code and documentation for my talk, _[Anime-fy Yourself Using Core ML](https://github.com/yonomitt/Anime-fy-Yourself-Talk)_
 
 ## Convert from PyTorch to Core ML
 To convert [@bryandlee](https://github.com/bryandlee)'s PyTorch implementation of [AnimeGANv2](https://github.com/bryandlee/animegan2-pytorch) to Core ML, run the following command:
